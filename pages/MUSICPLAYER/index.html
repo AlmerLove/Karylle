@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karylle's Music Player</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="album-cover">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../../assets/images/beforeyougo.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/Enchanted.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/MalibuNights.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/Payphone.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/ThisCity.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/Secrets.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/SomeoneYouLoved.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="music-player">
+    <h1>Title</h1>
+    <p>Song Name</p>
+
+    <audio id="song">
+      <source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" />
+    </audio>
+
+    <input type="range" value="0" id="progress" />
+
+    <div class="controls">
+      <button class="backward">
+        <i class="fa-solid fa-backward"></i>
+      </button>
+      <button class="play-pause-btn">
+        <i class="fa-solid fa-play" id="controlIcon"></i>
+      </button>
+      <button class="forward">
+        <i class="fa-solid fa-forward"></i>
+      </button>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="text/javascript" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>

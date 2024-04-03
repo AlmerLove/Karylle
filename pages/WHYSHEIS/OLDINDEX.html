@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffe6e6; /* Light Pink Background */
+    }
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .btn-creative {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 20px;
+      color: #fff; /* White text */
+    }
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  </style>
+</head>
+<body>
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p id="modalText"></p>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var modalContent = "So I don't know if you will try to open this again but if you do then your definitely gonna be reading this. So nakita ko nga na unfriended and unfollowed nako sa tanan nga social media accounts which is why it always comes to my mind why, but you know, I'm always avoiding you halin sng nakita taka liwat sa school, and also your note sng ligad just don't know if it's meant for me but yeah kay overthinker ko it made me think it was me you're talking about. Despite everything that's happened, I'm still regretful for the mistakes and choices I've made that annoyed or angered you but still friend or not your still the one that I have feelings for. In fact it made me more determined nga ma add friend tagd ka ya liwat kag nga maging daw parehos lng ligad nga daw ka smooth lng storyahanay by hoook or by crook ah(patia kung ayaw nd piliton ah) and yeah gin unfriend mo na ko, ignored, or I may or may not be able to talk to you again. But I want you to know that I was sincere about you and still thinking about you, I know that I was very selfish at that time or not only that time but also in the near future but yeah I'm trying or siguro daw saimo lng ko daw comfortable nga naka amo ko sato since no matter the situation ya always gd ko gabulig sa mga friends ko or parente even though ano pako kasako kag ka importante sng naubra ko pro idk lng ah. Maybe because I'm trying so hard at other things which made me like this. So yeah that's it. (New Update) baw HAHAHAHA nakibot mn ko pag gwa ko sa admin building ara ka sa gwa ba imbes didto ko maagi tani malakat sa internet lab napalibot mn ko alang2 ba HAHAHAH pro infairness ah angayan ka gd sa inyo executive attire. So professional and mature gd ya tulukon gd ya saimo nami tani sapakon gling kay asta lng ta tulok(or indi ka tulok kay naunahan dungan) kay hadlok ko manapak basi akig kapa or ano da yaaa. Pro ";
+
+    var modal = document.getElementById("myModal");
+    var modalText = document.getElementById("modalText");
+    modalText.textContent = modalContent;
+    modal.style.display = "block";
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    const date = new Date().toLocaleString('en-US', { timeZone: 'Asia/Manila' });
+    const message = `Page viewed on: ${date}`;
+
+    fetch('view_log.txt', {
+      method: 'POST',
+      body: message
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      console.log('View log successfully created');
+    })
+    .catch(error => {
+      console.error('Error creating view log:', error);
+    });
+  });
+</script>
+
+
+<div class="container">
+  <h1 class="mb-4">Why Karylle</h1>
+  
+  <!-- 25 Creative Buttons -->
+  <div class="row" id="button-container"></div>
+</div>
+
+<!-- Modals -->
+<div class="modal fade" id="modalGorgeous" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalAmazing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalShiningStar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalGem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalFabulous" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalBrilliant" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalExtraordinary" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalMasterpiece" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalStunningBeauty" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalExceptional" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalWorkOfArt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalMagnificent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalRemarkable" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalMarvel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalFantastic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalOutstanding" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalDelight" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalSuperb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalGraceful" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalSplendid" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalEnchanting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalTreasure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalLovely" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalCaptivating" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+<div class="modal fade" id="modalCool" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const buttonContainer = document.getElementById("button-container");
+
+    const phrases = [
+      "Is Gorgeous",
+      "Is Amazing",
+      "Is a Shining Star",
+      "Is a Gem",
+      "Is Fabulous",
+      "Is Brilliant",
+      "Is Extraordinary",
+      "Is a Masterpiece",
+      "Is a Stunning Beauty",
+      "Is Exceptional",
+      "Is a Work of Art",
+      "Is Magnificent",
+      "Is Remarkable",
+      "Is a Marvel",
+      "Is Fantastic",
+      "Is Outstanding",
+      "Is Delight",
+      "Is Superb",
+      "Is Graceful",
+      "Is Splendid",
+      "Is Enchanting",
+      "Is a Treasure",
+      "Is Lovely",
+      "Is Captivating",
+      "Is Cool"
+    ];
+
+    //
+
+    const modalContents = {
+       "modalIsGorgeous": "Hmmmmmm ano pabi masay ko since almost everyday ko na man ginahambal ya nga gwapa gd ya si idol, kita mo may crim and engineer pa nga naka idolized saimo(sanaol).I am sure damo paman da iban d ko lng knows or kilala basta damo gd ka ga idolized sa imo ya and not only that, maski din nga view ya always gd ya para sakon gorgeous ka.Basta amo na ahh ",
+      "modalIsAmazing": "Well I can just say that you are so amazing because as I know you more, your outlooks in life, and your ways of doing things it amazed me.From the way you think mapahambal gd ko na ya nga grabe gd ya si idol bilib nagd ko ya saiya kapin pa sa mga chika amazing gd ah gakakibot nlng ko kis sa mga ginapanghambal pro still doesn't feel bad kay atleast sakon gashare HAHAHAHAHA. What amazes gd ya sakon ya ang inyo tratohanay as a mag utodI know nahambal ko na pero lemme say it again subong palang ko ya kabati na galampusanay kmo ya or ga close combat mong",
+      "modalIsaShiningStar": "Star lng d ginbutang ko ah kay alangan man moon diba? Well it’s because for me you are that unreachable shining star. Kanami kwaon but indi gd madab ot, unless padab uton mo ko?(charr) kay for me everytime gd nga magtangla ko sa babaw kag makakita star ikaw dayun napaminsaran ko. But still I’m still hoping that maybe one day….To be continued nlng",
+      "modalIsaGem": "Now a gem, well first of all the authenticity mo gd yaaa. It’s like true to your own beliefs kagd ya imo nga daw nothing can stand in your way gd yaaa kung ano ang ginapatihan mo ya amo gd ya ayawan kana gd lubag maski gni papa mo diba? HAHAHAHA. Pero you are that rare gem to me nga one of a kind gd ya like while ga getting to know each other palang ta HAHAHAH. ",
+      "modalIsFabulous": "Well your so fabulous that and imo gd ya individuality and confidence is like high up gd ya nga daw way pako ka kita nga daw nd ka motivated. Like facing challenges bala daw sisiw lng saimo haww and like yeah your fearless. The way pagd magbayo or imo approach to every problems ayy nd gd mabang2 ah idol na idol gd yaaa.",
+      "modalIsBrilliant": "Creative, like you said HAHAHAH and also alam pa well sometimes gaka speechless nlng ko sa mga ingles mo nga daw gaka mental block na ko, perstaym pa naman hala gd ingles2 gd sa chat ni. Kag arang mga way gaka paminsaran sng iban like ano mn da na questions or ano grabe gd ya gakapaminsaran mo pa, gakabalda pako gani sato HAHAHAH. Brilliant to the point that it inspired me to a better understanding of things in life na way ko gaka experience.",
+      "modalIsExtraordinary": "Talent palang extraordinary na way ko pa galing nakita gd masyado magsaot kay gapango pa haysss pro cge lng madamo paman opportunities(hopefully). Arang balang expected na nila na ma amo kani or amo na pero daw na exceed mo pa ila expectations(isa nako da daan). Anddd ang impact gd ya ni idol(sakon gd) is very notable gd HAHAHAHHA, for me its like daw kabudlay kalimtan sng imo impression nga ginaleave.",
+      "modalIsaMasterpiece": "That’s right a masterpiece, everything about you is a masterpiece gd like each has its own. Like every side mo gd ya nga nabal an ko may ara gd nga iya gd which makes me admit defeat nlng(always). Arang daw every piece or side of you makes up for that whole nga ga create something unique and special gd yaaa.",
+      "modalIsaStunningBeauty": "Gwapa na ganiiii hambal kooo, pero arang daw everytime nga gakakita taka ya its like whole new world gd yaaa. Indi mn lng about sa looks gd pero arang radiance bala haww ambot daw ka budlay explain basta daw amo na sya. Nga arang nahuya lng ko permi everytime makita tapa ka nga ga kung ano ano da, ara pagd tong nga tupad ta hayss nakatupad mn ko sa celebrity baaa",
+      "modalIsExceptional": "Well idk sa iban pero amongs the crowd you are that ano gd ya nga ga stand out. From acads mo palang truly exceptional gd ah since sang gahambal kato how hard ya kabalo gd ko ya nga grabe mn imo time and effort para makapasar lng. Anddd as an officer pa very responsible gd yaaa grabe pa mag pinta2 kag kung ano da.",
+      "modalIsaWorkOfArt": "Well from personality to appearance palang work of art nagd ya with different blend of qualities. Just like how you admire a painting for its beauty bala daw amo na sa ah, idk lng sng mga types of painting haaa pero its just something creating from the way you are, the way you look bala haw nga daw ka unique.",
+      "modalIsMagnificent": "Sa presence mo palang ayyy ka magnificent gd yaa, like it commands attention gd ya bala haw and admiration. Parehos kay magnificent sa movie bala na may aura gd and oh the charisma pa nga ga pa stand out gd ya. Basta everything you do makes it memorable for me idk lng sa iban, kay its too hard to forget mn sng charisma mo many times nga gadungan ta tricycle ah tulok2 palang ko gni.",
+      "modalIsRemarkable": "Indi lang sa kay mga ginpanghimo mo perooo that impact gd bala nga gapabilin haww basta daw nd ko lng madescribe gd ya. Masulit2 nlng ni kay basta ang imo nga napang achieve and napanghimo is gakaremember ko gd and noted wera nlng sa exceptions kay syempre taho mn lng ta pero basta ikaw ya gina try ko gd na remember.",
+      "modalIsaMarvel": "Well it’s because you are a wonder. Like a marvel in nature bala nga ga captivate gd ya sng attention from you achievements and qualities balaa. Arang daw maka question mn ko nga grabe saimo gd ya like pano guro ga work imo mind?",
+      "modalIsFantastic": "Fantastic gd ya kay una happy2 lng dugay2 grabe na sunggod awsus ah akon mn sala ah. Perooo may ara gd ya times nga arang subo2 gd ko ya kag daw wala energy gakadala nlng ko bala sa imo positivity and enthusiasm kis a haw. Sa chika palang ayy ka bongga fantastic gd subong lng ko ka chika2 amo na pero its enjoyable man since i get to know more about you mn(included natong mga personas to nga namention mo ligad bala na nga gaselos2 ko? Nann)",
+      "modalIsOutstanding": "Ayyy sa IG palang acads to talent gd ya outstanding na. Nami na tingog tas alam pa din kapa daaa, pero ang saot ya to be observed pa kay way ko pa masyado na kita gd. Sa performance palang ya every contest ya outstanding performance gd ya permi ahh I mean si idol nagd na syempre eh nu?",
+      "modalIsDelight": "Well you are so delightful that you bring happiness and joy saakon awssus a idk lng sa iban ya basta amo na ya sakon bahala nada sila. Like gakalatnan nako kis a sa imo mn pati pangwordings ko sa iban galing kay karylle gd nga wordings. Learn from the best mong teh ara gd ang best na gwa gd nga gakakibot nlng ko kis a pero daw ka inspiring mn ang iban ah mn kag may matun an mn nga lesson ah.",
+      "modalIsSuperb": "Basta superb gd ya kayyy kada giho ya very excellent ah nga daw may ara kagd ya sa imo nga imo nga kalibutan aw daw ara balng you are in a league of your own ah. From performance to classes superb mn kay very tutom gd ya ah. That unwavering dedication bala haw para makapasar",
+      "modalIsGraceful": "Ayyy ari pagd sa tricycle palng professional na professional gd ya sit straight bala haw, walk straight, arang mang gawi daw wala garush permi nga daw controlled gd ang time(bahala late). From the way mag giho gd ya nga daw ka princess gd bala haw need I say more pa? Kay princess naman",
+      "modalIsSplendid": "The way you carry yourself is so splendid gd yaa nga daw araang basta daw ga leave impression ah idk na sng mga words pa nga ihambal kay daw halos tanan ara na sa iban na qualities mo nabutang kay daw pare parehos naman naman ni sila. ",
+      "modalIsEnchanting": "Ahh favorite ko gd ni. You are so enchanting that from the moment I saw you I was enchanted nga grabe ask ko sa mga kilala ko if kilala ka nila like ano name mo, taga diin or ano, basta mostly kabalo ka nagd sakon ah. Kabalo kagd how crazy I am when it comes sa imo nga pati sched to pics palang ahayy nd nako mag tell.",
+      "modalIsaTreasure": "Ahhh yes, a treasure indeed. Sa family mo palang ikaw na ang tinatagong yaman ni papa mo kay magab ehan gd nga daan balda na pero sakon you are a treasure gd mn, an expensive treasure nga daw budlay afford tani ang money(efforts) ko ka afford na saimo soon. Peroo since hambal mo mn nga amo ni amo to I’ll leave it fate nlng kung nd gd kaya.",
+      "modalIsLovely": "From the voice to appearance lovely nagd yaa, nakakainlove talaga. Problema lng she doesn’t love me awsussss pero amo na ahh maski amo pa to ya hambal mo saakon ligad kag dyutay mo lng nga ano way na balik nmn ulit feelings teh lovely gd diba",
+      "modalIsCaptivating": "So captivating nga sa tricycle palang nga saimo nlng ko to gni gatulok maski pa sa gym or ano da na lugar. Specially ato pagd tong pagsaot eh didto gd ko ya nagfocus2 lantaw saimo. Anddd sa pag acquaintance party nyo pagddd sng nka gownnn ahhh so captivating gd yaa sooo gwapaaa",
+      "modalIsCool": "Ato gd ang shades2 bala hw maski daw may ginatago2 lng pro cool dyapon ah gangster style bala hawww. From the way you speak palang cool na pero tani ang chat ta nd mn cool nga tugnaw baaa maski gahimo lng ta tuod sala prooo(hopefully mapatawad na baa)"
+    };
+
+    // Create buttons and modals
+   for (let i = 0; i < phrases.length; i++) {
+  const button = document.createElement("button");
+  button.classList.add("btn", "btn-creative");
+  button.innerHTML = phrases[i];
+
+  // Generate random color
+  const randomColor = getRandomColor();
+  button.style.backgroundColor = randomColor;
+
+  // Create a modal for each button
+  const modalId = `modal${phrases[i].replace(/\s+/g, '')}`;
+  const modal = createModal(modalId, `Why Karylle is ${phrases[i]}`, modalContents[modalId]);
+  document.body.appendChild(modal);
+
+  // Add event listener to open modal on button click
+  button.addEventListener("click", function () {
+    const modalInstance = new bootstrap.Modal(document.getElementById(modalId));
+    modalInstance.show();
+  });
+
+      buttonContainer.appendChild(button);
+    }
+
+    function getRandomColor() {
+      const letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function createModal(id, title, content) {
+      const modal = document.createElement("div");
+      modal.classList.add("modal", "fade");
+      modal.id = id;
+      modal.setAttribute("tabindex", "-1");
+      modal.setAttribute("aria-labelledby", "exampleModalLabel");
+      modal.setAttribute("aria-hidden", "true");
+
+      const modalDialog = document.createElement("div");
+      modalDialog.classList.add("modal-dialog");
+
+      const modalContent = document.createElement("div");
+      modalContent.classList.add("modal-content");
+
+      const modalHeader = document.createElement("div");
+      modalHeader.classList.add("modal-header");
+
+      const modalTitle = document.createElement("h5");
+      modalTitle.classList.add("modal-title");
+      modalTitle.innerHTML = title;
+
+      const modalCloseButton = document.createElement("button");
+      modalCloseButton.classList.add("btn-close");
+      modalCloseButton.setAttribute("type", "button");
+      modalCloseButton.setAttribute("data-bs-dismiss", "modal");
+      modalCloseButton.setAttribute("aria-label", "Close");
+
+      const modalBody = document.createElement("div");
+      modalBody.classList.add("modal-body");
+      modalBody.innerHTML = content;
+
+      modalHeader.appendChild(modalTitle);
+      modalHeader.appendChild(modalCloseButton);
+      modalContent.appendChild(modalHeader);
+      modalContent.appendChild(modalBody);
+      modalDialog.appendChild(modalContent);
+      modal.appendChild(modalDialog);
+
+      return modal;
+    }
+  });
+</script>
+</body>
+</html>

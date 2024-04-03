@@ -1,0 +1,16 @@
+const CONFIG = {
+    titleWeb: "Confession",
+    introTitle: 'Hi Karylle',
+    introDesc: 'This is my confession to you',
+    btnIntro: '^^Okay?^^',
+    title: 'Would you please accept my feelings?🥰',
+    desc: 'I really really like you',
+    btnYes: 'Yes <33',
+    btnNo: 'No :3',
+    question: 'So does that mean I have a chance? <3',
+    btnReply: 'Okay <3',
+    reply: 'Yes',
+    mess: 'Thank you 🥰',
+    messDesc: '',
+    btnAccept: 'Ok <3',
+}
