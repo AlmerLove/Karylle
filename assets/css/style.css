@@ -922,7 +922,7 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  color: pink;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1822,17 +1822,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
-
-/*  MOUSE EFFECT */
+/* MOUSE EFFECT */
 .glow-point {
-  position: absolute;
+  position: fixed; /* Change from absolute to fixed */
   box-shadow: 0rem 0rem 1.2rem 0.6rem rgb(var(--glow-rgb));
   pointer-events: none;
   z-index: 999;
 }
 
 .star {
-  position: absolute;
+  position: fixed; /* Change from absolute to fixed */
   z-index: 9999;
   color: white;
   font-size: 1rem;
